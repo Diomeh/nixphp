@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+./../artisan config:clear
+./../artisan cache:clear
+./../artisan route:clear
+./../artisan clear-compiled

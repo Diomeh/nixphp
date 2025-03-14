@@ -1,0 +1,18 @@
+# Ignore everything
+*
+
+# Allow tracking of .gitignore itself
+!.gitignore
+
+# Environment
+!.envrc
+!shell.nix
+
+# Helper scripts
+!artisan
+!clear
+!composer
+!node
+!npm
+!php
+!sail
