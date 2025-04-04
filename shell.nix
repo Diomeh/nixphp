@@ -4,6 +4,7 @@ pkgs.mkShellNoCC {
   packages = with pkgs; [
     nodejs_22
     ngrok
+    sqlite
     php82Packages.composer
     (php82.buildEnv {
       extensions = ({ enabled, all }: enabled ++ (with all; [ xdebug ]));
