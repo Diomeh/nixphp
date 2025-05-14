@@ -6,6 +6,8 @@ pkgs.mkShellNoCC {
     ngrok
     sqlite
     php82Packages.composer
+    heroku
+    redis
     (php82.buildEnv {
       extensions = ({ enabled, all }: enabled ++ (with all; [ xdebug ]));
       extraConfig = ''
