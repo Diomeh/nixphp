@@ -8,6 +8,9 @@ pkgs.mkShellNoCC {
     php82Packages.composer
     heroku
     redis
+    postman
+    jq
+    dbeaver-bin
     (php82.buildEnv {
       extensions = ({ enabled, all }: enabled ++ (with all; [ xdebug ]));
       extraConfig = ''
