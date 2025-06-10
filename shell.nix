@@ -11,6 +11,7 @@ pkgs.mkShellNoCC {
     postman
     jq
     dbeaver-bin
+    awscli2
     (php82.buildEnv {
       extensions = ({ enabled, all }: enabled ++ (with all; [ xdebug ]));
       extraConfig = ''
