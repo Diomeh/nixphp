@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-./../artisan config:clear
-./../artisan cache:clear
-./../artisan route:clear
-./../artisan clear-compiled
+./vendor/bin/sail php artisan config:clear
+./vendor/bin/sail php artisan cache:clear
+./vendor/bin/sail php artisan route:clear
+./vendor/bin/sail php artisan clear-compiled
