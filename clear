@@ -4,3 +4,4 @@
 ./vendor/bin/sail php artisan cache:clear
 ./vendor/bin/sail php artisan route:clear
 ./vendor/bin/sail php artisan clear-compiled
+./vendor/bin/sail php artisan optimize:clear
