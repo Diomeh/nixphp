@@ -2,17 +2,17 @@
 
 pkgs.mkShellNoCC {
   packages = with pkgs; [
-    nodejs_22
+    nodejs_24
     ngrok
     sqlite
-    php82Packages.composer
+    php84Packages.composer
     heroku
     redis
     postman
     jq
     dbeaver-bin
     awscli2
-    (php82.buildEnv {
+    (php.buildEnv {
       extensions = ({ enabled, all }: enabled ++ (with all; [ xdebug ]));
       extraConfig = ''
         xdebug.mode=debug
